@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
         RequestBody body = RequestBody.create(jsonObject.toString(), JSON);
 
-        Request request = new Request.Builder().url("https://api.openai.com/v1/completions").header("Authorization", "Bearer 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").post(body).build();
+        Request request = new Request.Builder().url("https://api.openai.com/v1/completions").header("Authorization", "Bearer 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 (get your own key)").post(body).build();
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
